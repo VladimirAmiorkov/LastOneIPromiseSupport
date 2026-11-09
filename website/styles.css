@@ -123,6 +123,9 @@ footer {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12), 0 0 0 1px var(--border);
 }
 
+.app-store-badge { display: inline-block; margin-top: 12px; }
+.app-store-badge img { display: block; width: 150px; height: 50px; }
+
 .hero-heading { margin-top: 1.5em; }
 
 @media (max-width: 480px) {
