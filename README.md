@@ -18,13 +18,10 @@ Plain HTML and CSS, no build step. Everything published lives in `website/`:
 
 `website/styles.css` holds shared styling (light/dark), and `website/images/` holds the app icon.
 `.github/workflows/pages.yml` deploys `website/` to GitHub Pages on every push to `main` that
-touches it.
+touches it, or when run manually from the Actions tab.
 
-## Testing locally
+## Previewing
 
-```bash
-./serve.sh
-```
-
-Opens <http://localhost:8000/LastOneIPromiseSupport/>, served the same way GitHub Pages serves it
-(including the 404 page). Pass a port to use a different one, e.g. `./serve.sh 8080`. Ctrl+C stops it.
+Any static file server works. GitHub Pages serves the site under `/LastOneIPromiseSupport/`, so
+serve the `website/` folder at that path to check links and the 404 page as they behave in
+production.
